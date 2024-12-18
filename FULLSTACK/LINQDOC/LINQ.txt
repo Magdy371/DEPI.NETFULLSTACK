@@ -1,0 +1,11 @@
+l-INQ FOR Data memory We use IEnumrable
+IEnumrable<T>
+Exposes the enumerator, which supports a simple iteration over a collection of a specified type.
+
+
+
+
+
+
+
+LINQ FOR REMOTE data WE use IQueryable
