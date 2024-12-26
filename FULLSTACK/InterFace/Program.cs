@@ -10,16 +10,10 @@
         */
         public static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.Create();
-            employee.Read();
-            employee.Update();
-            employee.Delete();
-            employee.getName();
-            employee.getAge();
-            employee.name = "John";
-            employee.age = 30;
-            employee.getInfos();
+            Manager m = new Manager();
+            m.age = 1;
+            m.name = "Test";
+            m.getInfos();
         }
     }
 }
