@@ -6,13 +6,15 @@ namespace oopDemo1
         // Static field to keep track of the last assigned ID
         private static int lastId = 0;
 
-        // Properties with strict encapsulation
+        // Fields
         private int id;
         private string? name;
         private string? job;
         private double salary;
         private string? title;
 
+
+        // Properties: Encapsulation
         public int Id
         {
             get { return id; }
