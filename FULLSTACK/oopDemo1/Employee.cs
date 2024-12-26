@@ -2,6 +2,8 @@ namespace oopDemo1
 {
     /// <summary>
     /// Represents an employee with ID, Name, Job, Salary, and Title.
+    /// class is user defined type
+    /// class is reference type
     /// </summary>
     public class Employee
     {
@@ -15,7 +17,7 @@ namespace oopDemo1
         //Default Constructor
         public Employee()
         {
-            
+
         }
 
         /// <summary>
@@ -41,6 +43,11 @@ namespace oopDemo1
         public void DisplayEmployeeInfo()
         {
             Console.WriteLine($"ID: {Id}, Name: {Name}, Job: {Job}, Salary: {Salary}, Title: {Title}");
+        }
+
+        public string netSalary(double overtime , double tax)
+        {
+            return $"{Name} final salary {Salary + overtime - tax}";
         }
     }
 }

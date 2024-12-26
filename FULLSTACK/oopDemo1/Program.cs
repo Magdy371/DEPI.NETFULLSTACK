@@ -3,6 +3,9 @@ namespace oopDemo1
 {
     class Program
     {
+        //class i a blueprint for creating objects
+        //class is reference type
+        //struct is value type
         static void Main(string[] args)
         {
             /*
@@ -19,7 +22,18 @@ namespace oopDemo1
             emp1.Job = "Developer";
             emp1.Salary = 1000;
             emp1.Title = "Senior";
-            emp1.DisplayEmployeeInfo();
+            System.Console.WriteLine(emp1.netSalary(100, 50));
+
+            Employee emp2 = new Employee(2, "Ali", "Tester", 2000, "Junior");
+            System.Console.WriteLine(emp2.netSalary(200, 100));
+
+            List<Employee> employees = new List<Employee>();
+            employees.Add(emp1);
+            employees.Add(emp2);
+            foreach (var emp in employees)
+            {
+                emp.DisplayEmployeeInfo();
+            }
         }
     }
 }
