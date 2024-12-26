@@ -4,7 +4,11 @@ namespace oopDemo1
     /// Represents an employee with ID, Name, Job, Salary, and Title.
     /// class is user defined type
     /// class is reference type
+    ///what does the properties do?answer: they are used to get and set the values of fields
+    ///
     /// </summary>
+    /// 
+
     public class Employee
     {
         // Properties
@@ -14,7 +18,7 @@ namespace oopDemo1
         public double Salary { get; set; }
         public string? Title { get; set; }
 
-        //Default Constructor
+        // Default Constructor
         public Employee()
         {
 
@@ -45,9 +49,16 @@ namespace oopDemo1
             Console.WriteLine($"ID: {Id}, Name: {Name}, Job: {Job}, Salary: {Salary}, Title: {Title}");
         }
 
-        public string netSalary(double overtime , double tax)
+        /// <summary>
+        /// Calculates the net salary after adding overtime and subtracting tax.
+        /// </summary>
+        /// <param name="overtime">The overtime amount.</param>
+        /// <param name="tax">The tax amount.</param>
+        /// <returns>A string representing the final salary.</returns>
+        public string NetSalary(double overtime, double tax)
         {
-            return $"{Name} final salary {Salary + overtime - tax}";
+            double finalSalary = Salary + overtime - tax;
+            return $"{Name}'s final salary is {finalSalary:C2}";
         }
     }
 }

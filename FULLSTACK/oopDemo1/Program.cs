@@ -22,10 +22,10 @@ namespace oopDemo1
             emp1.Job = "Developer";
             emp1.Salary = 1000;
             emp1.Title = "Senior";
-            System.Console.WriteLine(emp1.netSalary(100, 50));
+            System.Console.WriteLine(emp1.NetSalary(100, 50));
 
             Employee emp2 = new Employee(2, "Ali", "Tester", 2000, "Junior");
-            System.Console.WriteLine(emp2.netSalary(200, 100));
+            System.Console.WriteLine(emp2.NetSalary(200, 100));
 
             List<Employee> employees = new List<Employee>();
             employees.Add(emp1);
