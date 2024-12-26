@@ -17,19 +17,22 @@ namespace oopDemo1
             5-Abstraction: is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information
             */
             Employee emp1 = new Employee();
-            emp1.Id = 1;
             emp1.Name = "Ahmed";
             emp1.Job = "Developer";
             emp1.Salary = 1000;
             emp1.Title = "Senior";
             System.Console.WriteLine(emp1.NetSalary(100, 50));
 
-            Employee emp2 = new Employee(2, "Ali", "Tester", 2000, "Junior");
+            Employee emp2 = new Employee("Ali", "Tester", 2000, "Junior");
             System.Console.WriteLine(emp2.NetSalary(200, 100));
+
+            Employee emp3 = new Employee("Amar", "Tester", 7000, "Senior");
+            System.Console.WriteLine(emp3.NetSalary(200, 100));
 
             List<Employee> employees = new List<Employee>();
             employees.Add(emp1);
             employees.Add(emp2);
+            employees.Add(emp3);
             foreach (var emp in employees)
             {
                 emp.DisplayEmployeeInfo();
