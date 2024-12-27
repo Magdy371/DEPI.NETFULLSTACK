@@ -17,10 +17,10 @@
             // employee.getInfo(employee.Name, employee.Age);
             // #endregion
 
-            // #region override
-            // Tster tster = new Tster();
-            // tster.Display();
-            // #endregion
+            #region override
+            Tster tster = new Tster();
+            tster.Display();
+            #endregion
         
             #region virtual
 
@@ -36,8 +36,8 @@
             System.Console.WriteLine($"Imac price is {imac.getPrice()}");
             Macbook macbook = new Macbook();
             System.Console.WriteLine($"Macbook price is {macbook.getPrice()}");
-            // Iphone iphone = new Iphone();
-            // System.Console.WriteLine($"Iphone price is {iphone.getPrice()}");
+            Iphone iphone = new Iphone();
+            System.Console.WriteLine($"Iphone price is {iphone.getPrice()}");
             #endregion
 
 
@@ -73,13 +73,12 @@
             return base.getPrice() + 30000;
         }
     }
-    //this will develop and error
-    // public class Iphone : Macbook
-    // {
-    //     public override double getPrice()
-    //     {
-    //         return base.getPrice() + 20000;
-    //     }
-    // }
+    public class Iphone : Macbook
+    {
+        public new double getPrice()
+        {
+            return base.getPrice() + 20000;
+        }
+    }
 
 }
