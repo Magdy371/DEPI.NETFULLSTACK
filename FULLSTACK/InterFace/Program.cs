@@ -14,6 +14,12 @@
             m.age = 1;
             m.name = "Test";
             m.getInfos();
+            Outer outer = new Outer();
+            Outer.Inner inner = new Outer.Inner();
+            inner.Print();
+            outer.Print();
+
+
         }
     }
 }
