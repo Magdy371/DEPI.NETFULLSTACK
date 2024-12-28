@@ -19,7 +19,7 @@ namespace EncapsulationWithDLL
             other access modifeirs cannot be accessed because
             1- Internal is out from the namespace
             2-Private is not in the same class
-            3-private protected is not in the same calss or in heritance
+            3-private protected is not in the same class or inhertaed in the same space
             4-internal protected as it is not in the same name  space or inherited
             */
         }
