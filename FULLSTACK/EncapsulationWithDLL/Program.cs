@@ -12,7 +12,6 @@ namespace EncapsulationWithDLL
             System.Console.WriteLine(em.subtract(a,b));
             System.Console.WriteLine(em.multiply(a,b));
             System.Console.WriteLine(em.divide(a,b));
-
         }
     }
 }
