@@ -1,5 +1,6 @@
 ﻿namespace LinqQuery
 {
+#nullable enable
     internal class Program
     {
         public static void Main(string[] args)
@@ -44,8 +45,19 @@
             infos.Add(new Info("Magdy", "Senior Developer"));
             infos.Add(new Info("Menna", "Jonior Developer"));
 
-            List<Info> oInfos = new List<Info> 
-            { 
+            var result = infos.Where(infos => infos.name.Contains("m")).First();
+            Console.WriteLine($"Result is {result.name}");
+            //Or we can use this 
+            var fresult  = from emp in infos
+                           where emp.name.Contains("M")
+                           select emp;
+            foreach(var item in fresult)
+            {
+                Console.WriteLine($"names contaisn m letter are {item.name}");
+            }
+
+            List < Info > oInfos = new List<Info>
+            {
                 inf,
                 new Info() { name = "Ahmed", description = "Senior developer" },
                 new Info() { name = "Magdy", description = "CEO" }
@@ -56,6 +68,7 @@
             {
                 Console.WriteLine($"{info.name} --> {info.description}");
             }
+
 
         }
     }
