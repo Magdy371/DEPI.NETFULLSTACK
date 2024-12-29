@@ -51,7 +51,7 @@
             // LINQ query
             var fresult = from emp in infos
                           where emp.Name?.Contains("M", StringComparison.OrdinalIgnoreCase) == true
-                          select emp;
+                          select emp; //Emp here for all properties
 
             foreach (var item in fresult)
             {
@@ -73,8 +73,21 @@
 
             // Anonymous type does not require a blueprint (class)
             // Anonymous type is read-only
-            var student = new { ID = 1, Name = "Magdy", Title = "Senior .NET Developer" };
+            //which means it cannot be assignned
+            Console.WriteLine("Anonymus Type");
+            var student = new { 
+                ID = 1, Name = "Magdy", 
+                Title = "Senior .NET Developer" 
+            };
             Console.WriteLine($"Student: ID = {student.ID}, Name = {student.Name}, Title = {student.Title}");
+            
+            var resultQuery2 = from emp in infos
+                               where emp.Name?.Contains("M", StringComparison.OrdinalIgnoreCase) == true
+                               select new { emp.Description , FullName = emp.Name };
+            foreach (var item in resultQuery2) 
+            {
+                Console.WriteLine($"Description of names contains m are {item.Description}-> {item.FullName}");
+             }
         }
     }
 
