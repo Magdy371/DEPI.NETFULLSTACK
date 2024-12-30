@@ -1,4 +1,7 @@
-﻿namespace LinqQuery
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace LinqQuery
 {
 #nullable enable
     internal class Program
@@ -75,19 +78,32 @@
             // Anonymous type is read-only
             //which means it cannot be assignned
             Console.WriteLine("Anonymus Type");
-            var student = new { 
-                ID = 1, Name = "Magdy", 
-                Title = "Senior .NET Developer" 
+            var student = new {
+                ID = 1, Name = "Magdy",
+                Title = "Senior .NET Developer"
             };
             Console.WriteLine($"Student: ID = {student.ID}, Name = {student.Name}, Title = {student.Title}");
-            
+
             var resultQuery2 = from emp in infos
                                where emp.Name?.Contains("M", StringComparison.OrdinalIgnoreCase) == true
-                               select new { emp.Description , FullName = emp.Name };
-            foreach (var item in resultQuery2) 
+                               select new { emp.Description, FullName = emp.Name };
+            foreach (var item in resultQuery2)
             {
                 Console.WriteLine($"Description of names contains m are {item.Description}-> {item.FullName}");
-             }
+            }
+
+            MineList<Product> querList = new MineList<Product>();
+            querList.Add(new Product { Id = 1, name = "Imac" , unitprice = 30});
+            querList.Add(new Product { Id = 2, name = "HMD", unitprice = 20 });
+            querList.Add(new Product { Id = 3, name = "Motorola", unitprice = 25 });
+
+            var mineListQuery = from ml in querList
+                                where ml.unitprice < 30
+                                select new { fPrice = ml.unitprice, pName = ml.name };
+            foreach (var item in mineListQuery) 
+            { 
+                Console.WriteLine($"Product Name: {item.pName}, Price: {item.fPrice}"); 
+            }
         }
     }
 
@@ -103,5 +119,40 @@
 
         public string? Name { get; set; }
         public string? Description { get; set; }
+    }
+
+    /*
+     * Each class introdice table
+     * We using Object Relational Mapping
+     */
+
+    class Teacher
+    {
+        public int Id { get; set; }
+        public string? name { get; set; }
+        public string? Description { get; set; } = string.Empty;
+    }
+    public class Product
+    {
+        public Product()
+        {
+
+        }
+        public int Id { get; set; }
+        public string? name { get; set; }
+        public int unitprice { get; set; }
+    }
+
+    public class MineList <T> : IEnumerable<T>
+    {
+
+        List<T> t = new();
+        public void Add(T r)
+        {
+           t.Add(r);
+        }
+        public IEnumerator<T> GetEnumerator() { return t.GetEnumerator(); }
+        IEnumerator IEnumerable.GetEnumerator() { return t.GetEnumerator(); }
+
     }
 }
