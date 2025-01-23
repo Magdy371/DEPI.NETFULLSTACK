@@ -18,10 +18,15 @@
             Swapping.Swapp(30, 15);
             Swapping.SwappBitWise(30, 15);
             Console.WriteLine("--------------Find the closest number----------------\n");
-            Console.WriteLine(FindClosestNumber.closestNumber(13,4));
+            Console.WriteLine(FindClosestNumber.closestNumber(13, 4));
             Console.WriteLine("--------------Dice OpositePhase Problem----------------\n");
             DiceOppositePhases.OppositeFaceOfDice(3);
+            Console.WriteLine(DiceOppositePhases.OppositeFaceOfDice_2(3));
+            Console.WriteLine("--------------Sequnece Arithmatic Progression Problem----------------\n");
+            int[] arr = { 20, 15, 5, 0, 10 };
+            int n = arr.Length;
+            Console.WriteLine(ArithmeticProgression.progressionCheck(arr, n));
         }
-       
+
     }
 }

@@ -35,5 +35,11 @@ namespace LogicBuilding
                 Console.WriteLine(1);
             }
         }
+        public static int OppositeFaceOfDice_2(int n)
+        {
+            int count = 6;
+            return count - n + 1;
+
+        }
     }
 }
