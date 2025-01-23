@@ -26,5 +26,15 @@ namespace BasicProblems
             }
             return sum;
         }
+        //Taking input as string
+        public static int sumOfDigits(string number)
+        {
+            int sum = 0;
+            foreach (char c in number)
+            {
+                sum += c - '0';
+            }
+            return sum;
+        }
     }
 }
