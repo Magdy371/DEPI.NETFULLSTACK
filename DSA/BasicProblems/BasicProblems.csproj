@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Magdy\source\repos\DEPI.NETFULLSTACK\DSA\BasicProblems\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Magdy\source\repos\DEPI.NETFULLSTACK\DSA\BasicProblems\.editorconfig" />
+  </ItemGroup>
+
 </Project>
