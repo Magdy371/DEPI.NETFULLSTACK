@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module1", "Module1\Module1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessADO", "DataAccessADO\DataAccessADO.csproj", "{6901FCC9-FDD8-405E-9E1A-CBB78645C118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQSub", "LINQSub\LINQSub.csproj", "{37112A41-FC2E-4377-B6F2-D4E77665F253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore", "EFCore\EFCore.csproj", "{5BF74553-ACD3-4048-8736-DA783AC615B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6901FCC9-FDD8-405E-9E1A-CBB78645C118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6901FCC9-FDD8-405E-9E1A-CBB78645C118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6901FCC9-FDD8-405E-9E1A-CBB78645C118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37112A41-FC2E-4377-B6F2-D4E77665F253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37112A41-FC2E-4377-B6F2-D4E77665F253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37112A41-FC2E-4377-B6F2-D4E77665F253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37112A41-FC2E-4377-B6F2-D4E77665F253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
