@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQSub", "LINQSub\LINQSub.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore", "EFCore\EFCore.csproj", "{5BF74553-ACD3-4048-8736-DA783AC615B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPICRUD", "WebAPICRUD\WebAPICRUD.csproj", "{AC59A458-6DA6-4229-85B3-082B330F9A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BF74553-ACD3-4048-8736-DA783AC615B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC59A458-6DA6-4229-85B3-082B330F9A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC59A458-6DA6-4229-85B3-082B330F9A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC59A458-6DA6-4229-85B3-082B330F9A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC59A458-6DA6-4229-85B3-082B330F9A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
