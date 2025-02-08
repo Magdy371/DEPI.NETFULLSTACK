@@ -1,0 +1,6 @@
+@webApiCRUD_HostAddress = http://localhost:5234
+
+GET {{webApiCRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
