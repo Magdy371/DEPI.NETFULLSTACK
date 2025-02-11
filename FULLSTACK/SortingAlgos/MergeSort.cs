@@ -23,7 +23,7 @@ namespace SortingAlgos
             Merge(array, left, right); // Fix: Call Merge to combine sorted arrays
         }
 
-        public static void Merge<T>(T[] array, T[] left, T[] right) where T : IComparable<T>
+        private static void Merge<T>(T[] array, T[] left, T[] right) where T : IComparable<T>
         {
             int i = 0, j = 0, k = 0;
             while (i < left.Length && j < right.Length)
