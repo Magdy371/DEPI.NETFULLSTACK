@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPICRUD", "WebAPICRUD\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgos", "SortingAlgos\SortingAlgos.csproj", "{80A52787-7C8A-49EB-93C7-8B869ADB1CF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchGraphs", "SearchGraphs\SearchGraphs.csproj", "{AA34B913-C8DC-450A-A350-CC02667B5BB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{80A52787-7C8A-49EB-93C7-8B869ADB1CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A52787-7C8A-49EB-93C7-8B869ADB1CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80A52787-7C8A-49EB-93C7-8B869ADB1CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
