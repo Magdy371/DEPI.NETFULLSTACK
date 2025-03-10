@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgos", "SortingAlgo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchGraphs", "SearchGraphs\SearchGraphs.csproj", "{AA34B913-C8DC-450A-A350-CC02667B5BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{1F89E849-8655-49CF-87DA-C20F7FE325DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{6189FC6D-A3F7-4E12-B32B-3E0D0204A75D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA34B913-C8DC-450A-A350-CC02667B5BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F89E849-8655-49CF-87DA-C20F7FE325DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F89E849-8655-49CF-87DA-C20F7FE325DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F89E849-8655-49CF-87DA-C20F7FE325DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F89E849-8655-49CF-87DA-C20F7FE325DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6189FC6D-A3F7-4E12-B32B-3E0D0204A75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6189FC6D-A3F7-4E12-B32B-3E0D0204A75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6189FC6D-A3F7-4E12-B32B-3E0D0204A75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6189FC6D-A3F7-4E12-B32B-3E0D0204A75D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
