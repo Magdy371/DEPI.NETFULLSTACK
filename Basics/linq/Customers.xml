@@ -1,0 +1,52 @@
+<Customers>
+  <Customer>
+    <Id>1</Id>
+    <Name>John Doe</Name>
+    <Address>123 Main St, Springfield</Address>
+  </Customer>
+  <Customer>
+    <Id>2</Id>
+    <Name>Jane Smith</Name>
+    <Address>456 Oak Ave, Shelbyville</Address>
+  </Customer>
+  <Customer>
+    <Id>3</Id>
+    <Name>Robert Johnson</Name>
+    <Address>789 Pine Rd, Capital City</Address>
+  </Customer>
+  <Customer>
+    <Id>4</Id>
+    <Name>Emily Davis</Name>
+    <Address>101 Maple Dr, Ogdenville</Address>
+  </Customer>
+  <Customer>
+    <Id>5</Id>
+    <Name>Michael Brown</Name>
+    <Address>202 Birch Ln, North Haverbrook</Address>
+  </Customer>
+  <Customer>
+    <Id>6</Id>
+    <Name>Linda Williams</Name>
+    <Address>303 Cedar Blvd, Springfield</Address>
+  </Customer>
+  <Customer>
+    <Id>7</Id>
+    <Name>David Miller</Name>
+    <Address>404 Walnut St, Shelbyville</Address>
+  </Customer>
+  <Customer>
+    <Id>8</Id>
+    <Name>Patricia Wilson</Name>
+    <Address>505 Chestnut Ave, Capital City</Address>
+  </Customer>
+  <Customer>
+    <Id>9</Id>
+    <Name>James Taylor</Name>
+    <Address>606 Spruce Rd, Ogdenville</Address>
+  </Customer>
+  <Customer>
+    <Id>10</Id>
+    <Name>Barbara Anderson</Name>
+    <Address>707 Elm St, North Haverbrook</Address>
+  </Customer>
+</Customers>
